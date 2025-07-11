@@ -1,0 +1,67 @@
+package test_package;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import main.RomanNumerals;
+
+class TestPositiveRomanNumerals {
+
+	//TS001 case 1 input = V, expect result = 5
+	@Test
+	void TestconvertRomanNumToIntTS001_1() {
+		RomanNumerals RomanNumerals001_1 = new RomanNumerals();
+		int result = RomanNumerals001_1.convertRomanNumToInt("V");
+		
+		assertEquals(5, result);
+	}
+	@Test
+	void TestconvertRomanNumToIntTS001_2() {
+		RomanNumerals RomanNumerals001_2 = new RomanNumerals();
+		int result = RomanNumerals001_2.convertRomanNumToInt("VL");
+			
+		assertEquals("Error", result);
+		
+	}
+	@Test
+	void TestconvertRomanNumToIntTS001_3() {
+		RomanNumerals RomanNumerals001_3 = new RomanNumerals();
+		int result = RomanNumerals001_3.convertRomanNumToInt("CL");
+			
+		assertEquals(150, result);
+		
+	}
+	@Test
+	void TestconvertRomanNumToIntTS001_4() {
+		RomanNumerals RomanNumerals001_4 = new RomanNumerals();
+		int result = RomanNumerals001_4.convertRomanNumToInt("DD");
+			
+		assertEquals(1000, result);
+		
+	}
+	@Test
+	void TestconvertRomanNumToIntTS001_5() {
+		RomanNumerals RomanNumerals001_5 = new RomanNumerals();
+		int result = RomanNumerals001_5.convertRomanNumToInt("III");
+			
+		assertEquals(3, result);
+		
+	}
+	@Test
+	void TestconvertRomanNumToIntTS001_6() {
+		RomanNumerals RomanNumerals001_6 = new RomanNumerals();
+		int result = RomanNumerals001_6.convertRomanNumToInt("MIV");
+			
+		assertEquals(1004, result);
+		
+	}
+	@Test
+	void TestconvertRomanNumToIntTS001_7() {
+		RomanNumerals RomanNumerals001_7 = new RomanNumerals();
+		int result = RomanNumerals001_7.convertRomanNumToInt("MVL");
+			
+		assertEquals(1045, result);
+		
+	}
+	
+}

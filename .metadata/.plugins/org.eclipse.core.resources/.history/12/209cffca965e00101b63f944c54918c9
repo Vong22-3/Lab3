@@ -1,0 +1,35 @@
+package test_package;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import main.RomanNumerals;
+
+class TestRomanNumerals {
+
+	//TS001 case 1 input = V, expect result = 5
+	@Test
+	void TestconvertRomanNumToIntTS001_1() {
+		RomanNumerals RomanNumerals001_1 = new RomanNumerals();
+		int result = RomanNumerals001_1.convertRomanNumToInt("V");
+		
+		assertEquals(5, result);
+	}
+	@Test
+	void TestconvertRomanNumToIntTS001_2() {
+		RomanNumerals RomanNumerals001_2 = new RomanNumerals();
+		int result = RomanNumerals001_2.convertRomanNumToInt("VL");
+			
+		assertEquals(45, result);
+		
+	}
+	@Test
+	void TestconvertRomanNumToIntTS001_3() {
+		RomanNumerals RomanNumerals001_3 = new RomanNumerals();
+		int result = RomanNumerals001_3.convertRomanNumToInt("CL");
+			
+		assertEquals(150, result);
+		
+	}
+	
+}

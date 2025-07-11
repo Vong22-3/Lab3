@@ -1,0 +1,20 @@
+package test_package;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import main.RomanNumerals;
+
+class TestRomanNumerals {
+	
+	@Test
+	Void TestconvertRomanNumToInt() {
+		RomanNumerals TS001_1 = new RomanNumerals();
+		int result = RomanNumerals.convertRomanNumToInt(V);
+		
+		assertEquals(10, result);
+		
+	}
+	
+	
+}
